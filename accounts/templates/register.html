@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}Register {% endblock %}
+
+{% block body %}
+
+    <h1>Register Page</h1>
+    <a type="button" class="btn btn-block" href="{% url 'customer_register' %}">I am a customer</a>
+    <br><br>
+    <a type="button" class="btn btn-block" href="{% url 'shopkeeper_register' %}">I am a shopkeeper</a>
+
+{% endblock %}

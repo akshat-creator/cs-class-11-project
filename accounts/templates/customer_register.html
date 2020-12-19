@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Customer Registration {% endblock %}
+
+{% block body %}
+
+    <h1>Customer Registration Page</h1>
+    <form method="POST" action="{% url 'customer_register' %}">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit">
+    </form>
+
+{% endblock %}

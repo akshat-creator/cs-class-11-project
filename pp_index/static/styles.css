@@ -1,0 +1,58 @@
+body{
+    font-family: 'Raleway', sans-serif !important;
+}
+
+
+#nav1, #nav5{
+
+   
+    padding-right: 1em;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+#nav2 , #nav3, #nav4 {
+
+    padding-right: 1em;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+#nav-bar{
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.navbar {
+
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    
+}
+.navbar-brand img {
+
+    height: 40px;
+    padding-left: 20px;
+
+}
+.navbar-nav li {
+
+    padding:0 px
+
+}
+.fa-bars {
+
+    color: #fff;
+    font-size: 30px !important;
+}
+.swiper-container {
+
+    height: 500px;
+}
+#cart {
+
+    color: #fff;
+}
+
