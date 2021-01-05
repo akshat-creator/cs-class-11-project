@@ -2,7 +2,9 @@ body{
     font-family: 'Raleway', sans-serif !important;
 }
 
-
+navbar{
+    background-color: #fff;
+}
 #nav1, #nav5{
 
    
@@ -26,11 +28,6 @@ body{
 
 }
 
-.navbar {
-
-    background-image: linear-gradient(to right, #a517ba,#5f1782);
-    
-}
 .navbar-brand img {
 
     height: 40px;
