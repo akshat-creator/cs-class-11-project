@@ -2,21 +2,21 @@ body{
     font-family: 'Raleway', sans-serif !important;
 }
 
-navbar{
-    background-color: #fff;
+nav{
+    background-color: #202020;
 }
 #nav1, #nav5{
 
    
     padding-right: 1em;
-    color: #fff !important;
+    color: #ffffff !important;
     font-weight: 600;
 }
 
 #nav2 , #nav3, #nav4 {
 
     padding-right: 1em;
-    color: #fff !important;
+    color: #ffffff !important;
     font-weight: 600;
 }
 
@@ -46,10 +46,10 @@ navbar{
 }
 .swiper-container {
 
-    height: 500px;
+    height: 6000px;
 }
 #cart {
 
-    color: #fff;
+    color: #ffffff;
 }
 

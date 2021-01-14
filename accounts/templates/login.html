@@ -1,18 +1,104 @@
+
+{% extends 'layout.html' %}
 {% load static %}
 
 
 
-{% extends 'layout.html' %}
 
 {% block title %}Login {% endblock %}
 
 {% block body %}
-    <h1>Login Page</h1>
+    <h1 class="h1">Login Page</h1>
+    <div class="bruh">
     <form method="POST" action="{% url 'login' %}">
     {% csrf_token %}
     {{ form.as_p }}
-
+    <input type="submit">
     </form>
-   
+    </div>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.bruh{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d9d9d9;
+
+    width: 40em;
+    font-family: 'Raleway', sans-serif !important;
+    border-radius: 2em;
+    border: 0em solid #e27d60;
+    font-weight: 400;
+    padding: 2em;
+
+}
+.bruh:hover{
+    box-shadow:  4px 4px 10px#cccccc,
+             -4px -4px 10px #c0c0c0;
+}
+.h1{
+    font-family: 'Raleway', sans-serif !important;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 3.2em;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.bruh form{
+    margin-left: 5em;
     
+}
+
+.control-group{
+    margin-left: 2em;
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 1.3em;
+
+}
+.bruh input{
+    width:15em;
+    border-color: #9adad1;
+    border: 1.2px solid #afafaf;
+    height: 2em;
+    margin-top: 1em;
+    border-radius: 0.2em;
+    padding-left: 0.6em;
+    background-color: #fafafa;
+
+
+}
+
+.help-block{
+    font-size: 0.7em;
+}
+li {
+    font-size: 0.7em;
+}
+input[type="submit"] {
+
+
+
+background-color: #ffffff;
+color: black;
+border: none;
+transform: translateY(-4px);
+transition: 0.5s;
+width: 100px;
+height: 40px;
+border-radius: 0.2em;
+margin-left: 0em;
+font-size: 1.2em;
+
+}
+
+
+
+input[type="submit"]:hover{
+transform: translateY(0px);
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+}
+    </style>
 {% endblock %}
