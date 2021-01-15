@@ -26,7 +26,7 @@ SECRET_KEY = '5bf=cbl66*x#c$tj@ety$!q1t333_zx1=au2%#$nz)yhzoa56t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','https://piedpiperproject.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','https://cs-class-11.herokuapp.com']
 
 #for custom user table
 AUTH_USER_MODEL = 'accounts.User'
