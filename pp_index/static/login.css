@@ -1,0 +1,62 @@
+html{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  font-family: 'Raleway', sans-serif !important;
+}
+
+h1{
+  padding-top: 60px;
+}
+button{
+  padding-top: 50px;
+}
+
+#nav2 , #nav3, #nav4 {
+
+  padding-right: 1em;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+#nav-bar{
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+}
+
+.navbar {
+
+  background-image: linear-gradient(to right, #a517ba,#5f1782);
+  
+}
+.navbar-brand img {
+
+  height: 40px;
+  padding-left: 20px;
+
+}
+.navbar-nav li {
+
+  padding:0 px
+
+}
+.fa-bars {
+
+  color: #fff;
+  font-size: 30px !important;
+}
+#cart {
+
+  color: #fff;
+}
+.signup{
+
+  color: #fff;
+  padding-top: 5px;
+
+}

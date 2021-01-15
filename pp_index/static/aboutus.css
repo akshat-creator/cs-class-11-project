@@ -1,0 +1,18 @@
+body{
+    background-color: #420959 !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+h1
+{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: white !important;
+    font-size: 100px !important;
+}
+#para{
+    color: white !important;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    font-size: 20px !important;
+}
