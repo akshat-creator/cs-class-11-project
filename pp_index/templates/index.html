@@ -32,7 +32,7 @@
 
     <section id="nav-bar" style="width: 100%;">
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #343a40;">
-            <a class="navbar-brand" href="#"><img src="{% static 'logo.png' %}"></a>
+            <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'logo.png' %}"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
@@ -93,12 +93,9 @@
       <div class="row wow fadeIn" style="padding-left: 9rem;" >
         {% for item in object_list %}
         <div class="col-lg-5 col-md-5 mb-4"  >
-
-         
           <div class="card">
-
             <a href="{{ item.get_absolute_url }}">
-              <img src="{{ item.image }}"  class="card-img-top" style="border: 1px solid; padding:10px; width: 480px !important; height: 640px !important; object-fit: cover !important;">
+              <img src="{{ item.image }}"  class="card-img-top" >
             </a>
               
    
@@ -107,17 +104,16 @@
               <h5 style="color: #0772f5;">{{item.get_category_display}}</h5>
               
               <h5 class="dark-grey-text font-weight-bold">
-                <strong>
                   <a href="{{ item.get_absolute_url }}">{{item.title}}</a>
-                </strong>
+    
               </h5>
 
               <h4 class="font-weight-bold " style="color: #0772f5;">
-                <strong>Rs.{{item.price}}</strong>
+                $ {{item.price}}
               </h4>
               
               <h4 class="font-weight-bold" style="color: #0772f5;">
-                <strong>(-Rs.{{item.discount_price}})</strong>
+                Discount of $ {{ item.discount_price }}
               </h4>
 
               
@@ -164,5 +160,58 @@
       // do something…
       })
   </script>
+  <style>
+          /* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #343a40; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Raleway', sans-serif !important;
+    overflow-x: hidden;
+  }
+  h5{
+  font-size: 1.7em;
+
+}
+h4 {
+  font-size: 1.2em;
+}
+.card-img-top {
+  border: 0px solid;
+   padding:10px; 
+   width: 30em !important;
+    height: 30em !important; 
+    object-fit: cover !important;
+    user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+.card-img-top:hover{
+  box-shadow: lightblue;
+}
+.card {
+  margin-top: 5em;
+}
+  </style>
 </body>
 </html>
