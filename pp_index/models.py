@@ -4,9 +4,10 @@ from django.conf import settings
 
 # Create your models here.
 CATEGORY_CHOICES = [
-    ('AM', 'Amazon'),
-    ('FK', 'Flipkart'),
-    ('AB', 'AliBaba')
+    ('AM', 'Anand Store'),
+    ('FK', 'Krishna Grocery Store'),
+    ('AB', 'Sanjay Store'),
+    ('BP', 'Bread Pitt')
 ]
 COUNTRY_CHOICES = [
     ('india','India'),
